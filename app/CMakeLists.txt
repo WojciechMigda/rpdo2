@@ -15,15 +15,15 @@ target_sources( hexxlt PRIVATE
   "src/hexxlt.cpp"
 )
 
-add_executable( cli "src/dummy.cpp" )
-target_sources( cli PRIVATE
-  "src/main.cpp"
-)
+#add_executable( cli "src/dummy.cpp" )
+#target_sources( cli PRIVATE
+#  "src/main.cpp"
+#)
 
 include_directories( "src" )
 include_directories( ${Boost_INCLUDE_DIR} )
 
-target_link_libraries( cli hexxlt )
+#target_link_libraries( cli hexxlt )
 
 # Unit tests
 add_executable( utests "src/dummy.cpp" )
